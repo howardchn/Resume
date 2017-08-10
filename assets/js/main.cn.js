@@ -117,7 +117,7 @@ var appDataCn = {
         },
         {
             type: 'work',
-            title: 'Skills',
+            title: '技能',
             details: [
                 {
                     name: '.NET Framework',
