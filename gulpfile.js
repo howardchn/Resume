@@ -7,7 +7,8 @@ let relPath = {
     pub: './public',
     img: './assets/images/*',
     css: './assets/css/*',
-    mainjs: './assets/js/main.js'
+    mainjs: './assets/js/main.js',
+    mainjscn: './assets/js/main.cn.js'
 };
 
 gulp.task('bootcss', function() {
@@ -35,4 +36,11 @@ gulp.task('mainjs', function() {
     .pipe(gulp.dest([relPath.pub, 'js'].join('/')))
 })
 
-gulp.task('build', ['bootcss', 'vue', 'img', 'maincss', 'mainjs'])
+gulp.task('mainjs-cn', function() {
+    return gulp.src(relPath.mainjscn)
+    .pipe(uglify({mangle: true}))
+    .pipe(rename({extname: '.min.js'}))
+    .pipe(gulp.dest([relPath.pub, 'js'].join('/')))
+})
+
+gulp.task('build', ['bootcss', 'vue', 'img', 'maincss', 'mainjs', 'mainjs-cn'])

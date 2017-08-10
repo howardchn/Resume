@@ -26,3 +26,10 @@ li.content-container section div.row {
     margin-top: 15px;
     margin-left: 2px;
 }
+
+span.version {
+    font-size: small;
+    font-weight: normal;
+    line-height: 36px;
+    vertical-align: middle;
+}

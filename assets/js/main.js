@@ -12,7 +12,7 @@ var appData = {
                     name: 'ThinkGeo China Office',
                     url: 'http://thinkgeo.com',
                     summary: 'Technical Director',
-                    date: '2007/02 - 2007/08',
+                    date: '2007/02 - 2017/08',
                     work: 'Responsible for major products architecture and development and maintenance. In this nearly three years, I worked as technical director in China office, responsible to communicate with US office and prototype new products and training.'
                 },
                 {
@@ -104,7 +104,7 @@ var appData = {
                     work: 'This project is a B/S application for inputing finance data everydata into database, then regroup the data to create beautiful chart and table for the final report.'
                 }, {
                     name: 'PowerCN Wireless Signal Parser',
-                    summary: 'Develop GIL Data Front-End Data Importing System',
+                    summary: 'Parse the wireless signal and input to database',
                     date: '2006/01 - 2007/09',
                     work: 'This project is using Delphi to parse the binary format data of the wireless signal and put the parsed data information into data base for the final report.'
                 }

@@ -18,7 +18,7 @@
                 <div class="profile"></div>
 
                 <head>
-                    <h1>{{appData.title}} <span class="version">- <a href="index-cn.htm">中文</a></span></h1>
+                    <h1>{{appData.title}} <span class="version">- <a href="index.htm">English</a></span></h1>
                 </head>
                 <div>{{appData.description}}</div>
                 <div class="secondary">{{appData.currentPosition}}</div>
@@ -50,7 +50,7 @@
     <script type="text/javascript" src="/public/js/main.min.js"></script>
     <script type="text/javascript" src="/public/js/main.cn.min.js"></script>
     <script type="text/javascript">
-        var isEnglish = true;
+        var isEnglish = false;
         var app = new Vue({
             el: '#app',
             data: { appData: isEnglish ? appData : appDataCn }
