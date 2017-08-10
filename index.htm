@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="/public/js/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <section id="profile">
+            <center>
+                <div class="profile"></div>
+
+                <head>
+                    <h1>{{title}}</h1>
+                </head>
+                <div>{{description}}</div>
+                <div class="secondary">{{currentPosition}}</div>
+                <div class="secondary">{{basicInfo}}</div>
+            </center>
+        </section>
+
+        <ul>
+            <li v-for="content in experiences" class="content-container">
+                <section v-if="content.type === 'work'">
+                    <header>
+                        <h3>{{content.title}}</h3>
+                    </header>
+                    <div v-if="content.description" v-html="content.description"></div>
+                    
+                    <div class="row" v-for="work in content.details">
+                        <div style="float:left; margin-right: 5px;" v-if="work.logo"><img v-bind:src="work.logo" /></div>
+                        <div>
+                            <h5 v-if="work.url"><a v-bind:href="work.url" target="_blank">{{work.name}}</a></h5>
+                            <h5 v-else>{{work.name}}</h5>
+                            <div v-if="work.summary">{{work.summary}} ({{work.date}})</div>
+                            <div v-if="work.work">{{work.work}}</div>
+                        </div>
+                    </div>
+                </section>
+                <section v-else>
+                    <header>
+                        <h3>{{content.title}}</h3>gggg
+                    </header>
+                </section>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="/public/js/main.min.js"></script>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: appData
+        });
+    </script>
+</body>
+
+</html>
