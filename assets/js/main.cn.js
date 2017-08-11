@@ -158,6 +158,8 @@ var appDataCn = {
                     name: 'QQ: 17449203',
                 }, {
                     name: '微信: Godspeedch'
+                }, {
+                    name: '邮件地址: howardch@outlook.com'
                 }
             ]
         }

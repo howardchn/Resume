@@ -158,6 +158,8 @@ var appData = {
                     name: 'QQ: 17449203',
                 }, {
                     name: 'Wechat: Godspeedch'
+                }, {
+                    name: 'Email: howardch@outlook.com'
                 }
             ]
         }
