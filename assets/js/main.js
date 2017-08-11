@@ -68,7 +68,7 @@ var appData = {
                     name: 'Map Suite Map Controls of Xamarin',
                     url: 'https://thinkgeo.com/mobile',
                     summary: 'Architect the map controls of Xamarin',
-                    date: '2015/01 - 2016/07',
+                    date: '2015/01 - 2015/07',
                     work: 'This project includes three map controls for mobile mapping development. iOS and Android are used for creating native map apps with Xamarin Framework; Xamarin Forms is another framework that allows to use XAML and uniform APIs to build the mobile mapping applications.'
                 }, {
                     name: 'Map Suite GIS Editor',

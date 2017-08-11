@@ -62,7 +62,7 @@ var appDataCn = {
                     name: 'AgStudio Map for iPad',
                     url: 'https://itunes.apple.com/us/app/mapshots-agstudio-map/id958494319?mt=8',
                     summary: '设计和开发AgStudio Map for iPad应用',
-                    date: '2015/06 - 2016/10',
+                    date: '2015/06 - 2015/10',
                     work: '这是一个来自第三方的项目，使用公司Map Suite iOS Edition控件开发的一款iPad设备上对土壤采集，分析和离线地图的应用。'
                 }, {
                     name: 'Map Suite Map Controls of Xamarin',
