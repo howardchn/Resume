@@ -113,7 +113,7 @@ var appDataCn = {
         {
             type: 'work',
             title: '期望工作',
-            description: '职务为技术总监，或者项目经理；全职；接受在成都或者远程工作。期望月薪为20K - 30K.'
+            description: '职务为高级开发工程师，技术总监，或者项目经理；全职；接受在成都或者远程工作。期望月薪为18K以上'
         },
         {
             type: 'work',

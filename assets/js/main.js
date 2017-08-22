@@ -113,7 +113,7 @@ var appData = {
         {
             type: 'work',
             title: 'Expectation',
-            description: 'Position of Technical Director, Project Manager; Full-Time job; accept working in Chengdu or Remotely; Saleray range is from ￥20k - 30k per month.'
+            description: 'Position of Senior .NET Developer, Technical Director, Project Manager; Full-Time job; accept working in Chengdu or Remote work; Saleray range is above ￥18k per month.'
         },
         {
             type: 'work',
