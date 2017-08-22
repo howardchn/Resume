@@ -57,31 +57,31 @@ var appDataCn = {
                     url: 'https://thinkgeo.com',
                     summary: '对Map Suite现有控件产品进行重构',
                     date: '2016/02 - 2017/03',
-                    work: '负责和美国上层交互，对现有Map Suite产品进行重构，包括程序集分类，项目引用结构，分发策略的重构。直至新产品最终发布。'
+                    work: '负责和美国上层交互，对现有Map Suite .NET 地图控件（包括WPF, WinForms, WebForm, WebAPI, MVC, 以及基于Xamarin开发的iOS和Android移动控件）在保证功能和单元测试通过的情况下进行命名空间和程序集重新设计并将相关类型重构，并归类到特定的命名空间中。'
                 }, {
                     name: 'AgStudio Map for iPad',
                     url: 'https://itunes.apple.com/us/app/mapshots-agstudio-map/id958494319?mt=8',
                     summary: '设计和开发AgStudio Map for iPad应用',
                     date: '2015/06 - 2015/10',
-                    work: '这是一个来自第三方的项目，使用公司Map Suite iOS Edition控件开发的一款iPad设备上对土壤采集，分析和离线地图的应用。'
+                    work: '使用Xamarin iOS技术，用C#开发的一款iPad原生APP。该APP使用iOS GPS模块定位，用于精确记录土壤采集信息及地理位置；根据行车轨迹绘制土壤区域，统计面；支持离线操作；并附带绘制工具用于土壤采集标识和对土壤进行划分的工具。通过第三方公司提供的RESTful服务和他们的数据进行交互，并达到和现有桌面应用的无缝结合。'
                 }, {
                     name: 'Map Suite Map Controls of Xamarin',
                     url: 'https://thinkgeo.com/mobile',
                     summary: 'Architect the map controls of Xamarin 架构基于Xamarin开发的地图控件',
                     date: '2015/01 - 2016/07',
-                    work: '这是一个基于Xamarin开发的地图控件，包含iOS和Android平台下用C#创建移动应用控件；以及一个Xamarin Forms控件开发，Xamarin Forms允许使用XAML和统一的后端代码开发的应用，可以同时部署到iOS和Android设备上。'
+                    work: '使用Xamarin框架，实现针对于iOS，Android和Xamarin Forms平台使用C#开发地图应用的控件。地图控件支持多点触摸，深度缩放，多数据支持（Shapefile，Google，Bing，Sqlite...），对矢量数据进行多样化渲染等功能。以下链接是基于此产品做的一个小实例程序。'
                 }, {
                     name: 'Map Suite GIS Editor',
                     url: 'https://github.com/ThinkGeo/MapSuiteGisEditor',
                     summary: '和美国同时沟通，设计新需求并带领组员完成产品的实现开发。',
                     date: '2011/05 - 2013/05',
-                    work: '这个项目是公司第一款针对终端用户的GIS工具。针对用户地图数据进行处理，包括创建，修改和多样化地图样式设计。集成了多种空间地理分析工具以及交互式可视化地图展现。'
+                    work: '使用WPF，Ribbin，MEF，进程间通信等技术，架构的一款基于插件的终端地图查看，编辑和空间分析的工具。开发过程中严格使用IoC原则，对上层到下层模块进行抽象设计和交互，保证插件之间的隔离以及和整体操作上的融合。在开发过程中，由于界面需要，开发了很多自定义控件，以方便重用。'
                 }, {
                     name: 'Map Suite WPF Edition',
                     url: 'https://thinkgeo.com/desktop',
                     summary: '架构并开发Map Suite WPF Edition',
                     date: '2009/11 - 2010/02',
-                    work: '这是一款地图可视化控件，适用于WPF应用，可以把设计好的地图集成到现有的用户WPF项目中。'
+                    work: '此项目是开发一款基于WPF的地图自定义控件，用于WPF地图应用的二次开发。控件包含地图操控，缩放，加载和渲染矢量和栅格数据，以及动画。使用多线程技术保证在绘制数据的同时不会影响用户操控。由于小组人员有限，整个项目由我一人负责架构，编码，测试直至最后发布。以下项目是使用此控件开发的一个实例程序。'
                 }, {
                     name: '赴美工作3个月',
                     summary: '赴美工作3个月进行培训和产品技术支持',
@@ -96,7 +96,7 @@ var appDataCn = {
                     name: 'Map Suite Web Edition',
                     summary: '设计开发基于WebForms的地图可视化控件应用',
                     date: '2008/01 - 2008/10',
-                    work: '这是一款Map Suite下一代基于WebForms的自定义可视化控件开发。使用AJAX技术为客户端地图操作带来良好的体验。带领4个同事完成整个项目的开发直至发布。'
+                    work: '基于OpenLayers 2.0 JS 类库开发的一个ASP.NET 服务器自定义控件，用户开发前端交互式地图应用。此控件需要再了解WebForm生命周期的情况下，自动集成和部署所需要的客户端脚本库，在用户postback后保持当前地图状态，并设计若干异步方法保证地图客户端和服务端交互时的流畅性。以下项目链接是基于此控件做的一个汽车监控示例。'
                 }, {
                     name: '聚源数据前端数据录入系统',
                     summary: '前端数据录入和展示的系统',
