@@ -63,13 +63,13 @@ var appDataCn = {
                     url: 'https://itunes.apple.com/us/app/mapshots-agstudio-map/id958494319?mt=8',
                     summary: '设计和开发AgStudio Map for iPad应用',
                     date: '2015/06 - 2015/10',
-                    work: '使用Xamarin iOS技术，用C#开发的一款iPad原生APP。该APP使用iOS GPS模块定位，用于精确记录土壤采集信息及地理位置；根据行车轨迹绘制土壤区域，统计面；支持离线操作；并附带绘制工具用于土壤采集标识和对土壤进行划分的工具。通过第三方公司提供的RESTful服务和他们的数据进行交互，并达到和现有桌面应用的无缝结合。'
+                    work: '使用Xamarin iOS技术，用C#开发的一款iPad原生APP。该APP使用iOS GPS模块定位，用于精确记录土壤采集信息及地理位置；根据行车轨迹绘制土壤区域，统计面；支持离线操作；并附带绘制工具用于土壤采集标识和对土壤进行划分的工具。通过第三方公司提供的RESTful服务和他们的数据进行交互，并达到和现有桌面应用的无缝结合。标题中的链接是AppStore上的展示。'
                 }, {
                     name: 'Map Suite Map Controls of Xamarin',
                     url: 'https://itunes.apple.com/cn/app/thinkgeo-selectasite/id1048025517?l=en&mt=8',
                     summary: 'Architect the map controls of Xamarin 架构基于Xamarin开发的地图控件',
                     date: '2015/01 - 2016/07',
-                    work: '使用Xamarin框架，实现针对于iOS，Android和Xamarin Forms平台使用C#开发地图应用的控件。地图控件支持多点触摸，深度缩放，多数据支持（Shapefile，Google，Bing，Sqlite...），对矢量数据进行多样化渲染等功能。以下链接是基于此产品做的一个小实例程序。'
+                    work: '使用Xamarin框架，实现针对于iOS，Android和Xamarin Forms平台使用C#开发地图应用的控件。地图控件支持多点触摸，深度缩放，多数据支持（Shapefile，Google，Bing，Sqlite...），对矢量数据进行多样化渲染等功能。标题链接是基于此产品做的一个小实例程序。'
                 }, {
                     name: 'Map Suite GIS Editor',
                     url: 'https://github.com/ThinkGeo/MapSuiteGisEditor',
@@ -81,7 +81,7 @@ var appDataCn = {
                     url: 'https://github.com/ThinkGeo/HowDoISample-ForWpf',
                     summary: '架构并开发Map Suite WPF Edition',
                     date: '2009/11 - 2010/02',
-                    work: '此项目是开发一款基于WPF的地图自定义控件，用于WPF地图应用的二次开发。控件包含地图操控，缩放，加载和渲染矢量和栅格数据，以及动画。使用多线程技术保证在绘制数据的同时不会影响用户操控。由于小组人员有限，整个项目由我一人负责架构，编码，测试直至最后发布。以下项目是使用此控件开发的一个实例程序。'
+                    work: '此项目是开发一款基于WPF的地图自定义控件，用于WPF地图应用的二次开发。控件包含地图操控，缩放，加载和渲染矢量和栅格数据，以及动画。使用多线程技术保证在绘制数据的同时不会影响用户操控。由于小组人员有限，整个项目由我一人负责架构，编码，测试直至最后发布。标题项目是使用此控件开发的一个实例程序。'
                 }, {
                     name: '赴美工作3个月',
                     summary: '赴美工作3个月进行培训和产品技术支持',
@@ -97,7 +97,7 @@ var appDataCn = {
                     url: 'https://github.com/ThinkGeo/AjaxVehicleTrackingSample-ForWebForms',
                     summary: '设计开发基于WebForms的地图可视化控件应用',
                     date: '2008/01 - 2008/10',
-                    work: '基于OpenLayers 2.0 JS 类库开发的一个ASP.NET 服务器自定义控件，用户开发前端交互式地图应用。此控件需要再了解WebForm生命周期的情况下，自动集成和部署所需要的客户端脚本库，在用户postback后保持当前地图状态，并设计若干异步方法保证地图客户端和服务端交互时的流畅性。以下项目链接是基于此控件做的一个汽车监控示例。'
+                    work: '基于OpenLayers 2.0 JS 类库开发的一个ASP.NET 服务器自定义控件，用户开发前端交互式地图应用。此控件需要再了解WebForm生命周期的情况下，自动集成和部署所需要的客户端脚本库，在用户postback后保持当前地图状态，并设计若干异步方法保证地图客户端和服务端交互时的流畅性。标题项目链接是基于此控件做的一个汽车监控示例。'
                 }, {
                     name: '聚源数据前端数据录入系统',
                     summary: '前端数据录入和展示的系统',
