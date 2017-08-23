@@ -51,9 +51,7 @@ var appDataCn = {
                     name: 'Map Suite 10.0 产品维护',
                     summary: '负责带领研发组进行Map Suite 10.0维护和新特性添加',
                     date: '2017/03 - 2017/08',
-                    work: `新产品的发布带来了很多的优势，但是随之也附带了很多不兼容的改动。我们会面临大量客户对于升级，重定向已有程序集，和选择合适的程序集以便开发；同时需要整理，编写，发布需要的新文档。
-                    
-                    因此我的任务是负责带领研发组进行Map Suite 10.0维护和新特性添加，具体负责对用户和内部提交的Bug进行修复，同时进行新技术研究，创建新特性雏形并考虑集成到产品线。`
+                    work: '新产品的发布带来了很多的优势，但是随之也附带了很多不兼容的改动。我们会面临大量客户对于升级，重定向已有程序集，和选择合适的程序集以便开发；同时需要整理，编写，发布需要的新文档。我的职责是负责带领研发组进行Map Suite 10.0维护和新特性添加，具体负责对用户和内部提交的Bug进行修复，同时进行新技术研究，创建新特性雏形并考虑集成到产品线。'
                 }, {
                     name: 'Map Suite 10.0 重构研发',
                     url: 'https://thinkgeo.com',
@@ -68,7 +66,7 @@ var appDataCn = {
                     work: '使用Xamarin iOS技术，用C#开发的一款iPad原生APP。该APP使用iOS GPS模块定位，用于精确记录土壤采集信息及地理位置；根据行车轨迹绘制土壤区域，统计面；支持离线操作；并附带绘制工具用于土壤采集标识和对土壤进行划分的工具。通过第三方公司提供的RESTful服务和他们的数据进行交互，并达到和现有桌面应用的无缝结合。'
                 }, {
                     name: 'Map Suite Map Controls of Xamarin',
-                    url: 'https://thinkgeo.com/mobile',
+                    url: 'https://itunes.apple.com/cn/app/thinkgeo-selectasite/id1048025517?l=en&mt=8',
                     summary: 'Architect the map controls of Xamarin 架构基于Xamarin开发的地图控件',
                     date: '2015/01 - 2016/07',
                     work: '使用Xamarin框架，实现针对于iOS，Android和Xamarin Forms平台使用C#开发地图应用的控件。地图控件支持多点触摸，深度缩放，多数据支持（Shapefile，Google，Bing，Sqlite...），对矢量数据进行多样化渲染等功能。以下链接是基于此产品做的一个小实例程序。'
@@ -80,7 +78,7 @@ var appDataCn = {
                     work: '使用WPF，Ribbin，MEF，进程间通信等技术，架构的一款基于插件的终端地图查看，编辑和空间分析的工具。开发过程中严格使用IoC原则，对上层到下层模块进行抽象设计和交互，保证插件之间的隔离以及和整体操作上的融合。在开发过程中，由于界面需要，开发了很多自定义控件，以方便重用。'
                 }, {
                     name: 'Map Suite WPF Edition',
-                    url: 'https://thinkgeo.com/desktop',
+                    url: 'https://github.com/ThinkGeo/HowDoISample-ForWpf',
                     summary: '架构并开发Map Suite WPF Edition',
                     date: '2009/11 - 2010/02',
                     work: '此项目是开发一款基于WPF的地图自定义控件，用于WPF地图应用的二次开发。控件包含地图操控，缩放，加载和渲染矢量和栅格数据，以及动画。使用多线程技术保证在绘制数据的同时不会影响用户操控。由于小组人员有限，整个项目由我一人负责架构，编码，测试直至最后发布。以下项目是使用此控件开发的一个实例程序。'
@@ -96,6 +94,7 @@ var appDataCn = {
                     work: '这是一个基于微软Silverlight框架开发的富客户端地图可视化控件。独立设计，架构，编写代码，文档及示例到最终发布。'
                 }, {
                     name: 'Map Suite Web Edition',
+                    url: 'https://github.com/ThinkGeo/AjaxVehicleTrackingSample-ForWebForms',
                     summary: '设计开发基于WebForms的地图可视化控件应用',
                     date: '2008/01 - 2008/10',
                     work: '基于OpenLayers 2.0 JS 类库开发的一个ASP.NET 服务器自定义控件，用户开发前端交互式地图应用。此控件需要再了解WebForm生命周期的情况下，自动集成和部署所需要的客户端脚本库，在用户postback后保持当前地图状态，并设计若干异步方法保证地图客户端和服务端交互时的流畅性。以下项目链接是基于此控件做的一个汽车监控示例。'
