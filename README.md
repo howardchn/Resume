@@ -1,9 +1,9 @@
 # Howard Resume
-Visit [my resume](https://howardchn.github.io) to know about me. To make it run, use following command.
+Visit [my resume](https://howardchn.github.io/Resume) to know about me. To make it run, use following command.
 
 1. Clone this repo
 ```
-git clone https://github.com/howardchn/howardchn.github.io.git
+git clone [this repo uri]
 ```
 
 2. Add dependencies
