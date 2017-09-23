@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "description": "Howard Chen's resume",
+  "main": "index.js",
+  "authors": [
+    "Howard Chen <howardch@outlook.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
