@@ -11,7 +11,7 @@ body {
 }
 
 .profile {
-    background-image: url(/public/img/profile.jpg);
+    background-image: url(/Resume/public/img/profile.jpg);
     background-size: cover;
     width: 200px;
     height: 150px;
