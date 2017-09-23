@@ -36,7 +36,7 @@ var appData = {
             details: [
                 {
                     name: 'Sichuan University',
-                    logo: '/public/img/scu-logo.jpeg',
+                    logo: '/Resume/public/img/scu-logo.jpeg',
                     summary: 'Two Bachelor Degree (Design and Software Engineering)',
                     date: '2000 - 2004',
                     work: 'Design major learns graphics designing and painting; Software Engineering learns the software development and computer science.'

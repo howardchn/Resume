@@ -36,7 +36,7 @@ var appDataCn = {
             details: [
                 {
                     name: '四川大学',
-                    logo: '/public/img/scu-logo.jpeg',
+                    logo: '/Resume/public/img/scu-logo.jpeg',
                     summary: '（绘画，设计 + 软件工程）',
                     date: '2000 - 2004',
                     work: '学习平面设计，软件开发流程，计算机基础，数据结构，设计模式等课程。'
