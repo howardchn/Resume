@@ -1,7 +1,7 @@
 var appData = {
     title: 'Howard Chen',
     description: 'Good at build .NET components, application includes desktop, web full stack development. Have 8+ years of team leader and 3 years technical director experience.',
-    currentPosition: 'Technical Director',
+    currentPosition: 'Technical Project Manager',
     basicInfo: 'Male  ︳Bachelor Degree ︳ 14 years working experience  ︳Live in Chengdu',
     experiences: [
         {
