@@ -136,22 +136,22 @@ var appData = {
                 }, {
                     name: 'Javascript',
                     summary: 'Pure Javascript, Typescript, JS framework like jQuery, Vue, lodash and Angular',
-                    date: '2004 - 2017 Occasionally',
+                    date: '2004 - 2018',
                     work: 'Learned it very early; used it in 2 official projects and several sample projects and website. The pure JS is very familiar, but with the 3rd party JS library, I still need to search documentations.'
                 }, {
                     name: 'Html + CSS',
                     summary: 'Html and CSS, used bootstrap a lot',
-                    date: '2004 - 2017 Occasionally',
+                    date: '2004 - 2018',
                     work: 'Familiar with Html and CSS, can build a webpage very fast with bootstrap. Willing to learn the others.'
                 }, {
                     name: 'NodeJS',
                     summary: 'Nomal Level',
-                    date: '2016 - 2017 Occasionally',
+                    date: '2016 - 2018',
                     work: 'Use NodeJS to create some tools and use Express to build two entire websites. Can use with documents.'
                 }, {
                     name: 'Python',
                     summary: 'Basic Level',
-                    date: '2016 - 2017 Occasionally',
+                    date: '2016 - 2018 Occasionally',
                     work: 'Know the basics, but no chance to deeg more.'
                 }
             ]
