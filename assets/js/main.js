@@ -9,6 +9,13 @@ var appData = {
             title: 'Working Experience',
             details: [
                 {
+                    name: 'LogicMonitor',
+                    url: 'http://logicmonitor.com',
+                    summary: 'Technical Project Manager',
+                    date: '2018/09 - Now',
+                    work: 'Responsible for managing to implement variegated requirements of extending our products.'
+                },
+                {
                     name: 'ThinkGeo China Office',
                     url: 'http://thinkgeo.com',
                     summary: 'Technical Director',
@@ -47,6 +54,12 @@ var appData = {
             type: 'work',
             title: 'Projects Detail',
             details: [
+                {
+                    name: 'Manage to implement variegated requirements',
+                    summary: 'Lead development team and communicate the requirements with US office',
+                    date: '2017/03 - 2017/08',
+                    work: 'Research the new requirements, and communicate with US office to make the final version of the PRD. Estimate time for the implementation and control the time-line of the entire project development till it is released.'
+                }, 
                 {
                     name: 'Map Suite 10.0 products maintenance',
                     summary: 'Lead development team for Map Suite 10.0 maintenence',
