@@ -1,8 +1,8 @@
 var appData = {
     title: 'Howard Chen',
     description: 'Good at build .NET components, application includes desktop, web full stack development. Have 8+ years of team leader and 3 years technical director experience.',
-    currentPosition: 'Technical Project Manager',
-    basicInfo: 'Male  ︳Bachelor Degree ︳ 14 years working experience  ︳Live in Chengdu',
+    currentPosition: 'Senior Technical Product Manager',
+    basicInfo: 'Male  ︳Bachelor Degree ︳ 15 years working experience  ︳Live in Chengdu',
     experiences: [
         {
             type: 'work',
@@ -11,7 +11,7 @@ var appData = {
                 {
                     name: 'LogicMonitor',
                     url: 'http://logicmonitor.com',
-                    summary: 'Technical Project Manager',
+                    summary: 'Senior Technical Project Manager',
                     date: '2018/09 - Now',
                     work: 'Responsible for managing to implement variegated requirements of extending our products.'
                 },
@@ -54,6 +54,52 @@ var appData = {
             type: 'work',
             title: 'Projects Detail',
             details: [
+                {
+                    name: 'Anomaly based alert suppression',
+                    summary: 'Determine non-anomaly alerts and suppress them intelligently',
+                    date: '2019/05 - Present',
+                    work: 'It is the biggest project here so far since I joined LM. Anomaly based alert suppression is one factor. The biggest challenge is to kick start the micro-service transferring and move parts our infrastructures into cloud. WIP...'
+                },
+                {
+                    name: 'Anomaly visualization',
+                    url: 'https://www.logicmonitor.com/support/anomaly-detection-visualization',
+                    summary: 'This project is to detect anomalies based on a period of metrics. After finding out the anomalies by machine learning algorithms, we could render the anomalies on a graph widget and some corresponding functions around it.',
+                    date: '2019/01 - 2019/05',
+                    work: 'In this project, we need to learn machine learning. Talk to few trail users. Design the UI experience based on existing LM platform and make it publish. With this project, I learned a lot of the anomaly detection knowledge based on time-serials.'
+                },
+                {
+                    name: 'Kubernetes Resource Monitoring',
+                    url: 'https://logicmonitor.github.io/k8s-argus',
+                    summary: 'This is kubernetes application written by go. It syncs frequently used k8s resources into LogicMonitor platform and keep them monitored.',
+                    date: '2018/11 - Present',
+                    work: 'What our job is to create the application to discover the k8s resources and keep watching the CRUD of the resources changing. This project is released but requires more new features based on the market feedback. So by now, it has a lot of space to improve.'
+                },
+                {
+                    name: 'Push metrics for StatsD',
+                    summary: 'StatsD is an open source project that allows user to push their metrics as a unified data format into a specified destination which in our case, LogicMonitor platform is its destination.',
+                    date: '2018/04 - 2018/08',
+                    work: 'This project is separated to two phases. Phase 1 targets for visualization. The metrics are not persistent in our system. With this project, we setup several layers SOAs for various purpose like extension, data format, authentication as well as metrics center. Phase 2 targets to the metrics persistence. It is a big challenge for product team and dev team. So we took it very carefully. Due to the requirement part doesn\'t have a final agreement with customer, phase 2 feature is being hold right now and it will be bring up again till we got enough user cases by the end of 2019.'
+                },
+                {
+                    name: 'Recycle bin for recently deleted resources',
+                    url: 'https://www.logicmonitor.com/support/devices/adding-managing-devices/deleting-devices/#restoring',
+                    summary: 'In the old system, when user deletes a resource from our system, it is a permanent deletion. In this case, some users might delete their devices unexpectedly or by some other manager, or want to delete at the moment but regret after that, there is not case for users to restore them back. This feature is designed for those pain points.',
+                    date: '2018/03 - 2018/06',
+                    work: 'In this project, one good thing I have learned is that, if you design a feature from scratch, it is quite easy, but if you stack new features on top of a stable system, there are lots of things to consider; including the association with ops team.'
+                },
+                {
+                    name: 'User based time zone',
+                    url: 'https://howardchn.github.io/2018/02/12/timezone-dst-best-practices/',
+                    summary: 'Support time zone customization on LM platform',
+                    date: '2018/01 - 2018/05',
+                    work: 'Time zone is a big feature and important for enterprise software. Before this project, users has to manually convert timestamp from a certain time zone to a client time zone. We also allow to schedule the tasks for a specific time zone. It seems a simple project, still has some challenges if you don\'t have relative knowledges. Another challenge is that, we are building this feature upon a pretty stable system, we need to guarantee the function are not harmed by our newly feature, so we need to make decision on various situations. One interesting things we met is that, the time zone library provided by Java has different versions that are corresponded to Java version, so the UI client time zone database\'s version should be synced. After this project, I provided a company-wide presentation with this function and experience. This must helpful for the other developers. '
+                },
+                {
+                    name: 'Signtool service for windows collector',
+                    summary: 'Collector is an agent that allows for user to install on their machine. It helps to collect metrics based on the schema user defined on LM platform. If the windows agent is not signed, user will get a "friendly" smart screen during the installation. So the goal is to sign the windows collector on the fly, keep what the linux download process, don\'t increase the workload for our kernel services and guarantee users could get response in an acceptance period.',
+                    date: '2017/11  - 2018/01',
+                    work: 'Create a micro-service, extract the entire process from our kernel services out to the new service. To make sure it is high available, it is load-balanced by 4 pods. Lots of things to learn and establish during the implementation. After this project, one impression is the importance of kubernetes and load-balancer. Also I understand how to implement a circuit breaker and the benefit of stateless services.'
+                },
                 {
                     name: 'Manage to implement variegated requirements',
                     summary: 'Lead development team and communicate the requirements with US office',
@@ -151,8 +197,13 @@ var appData = {
                 }, {
                     name: 'Python',
                     summary: 'Basic Level',
-                    date: '2016 - 2018 Occasionally',
+                    date: '2016 - 2019',
                     work: 'Know the basics, but no chance to deeg more.'
+                }, {
+                    name: 'Go',
+                    summary: 'Normal Level',
+                    date: '2018 - 2019',
+                    work: 'Has two open source projects. One is for cleaning relative resources from the kubernetes monitoring tool from LM platform. Another one is about r-tree.'
                 }
             ]
         },
@@ -169,6 +220,8 @@ var appData = {
                     name: 'Wechat: Godspeedch'
                 }, {
                     name: 'Email: howardch@outlook.com'
+                }, {
+                    name: 'Blog: https://howardchn.github.io'
                 }
             ]
         }
