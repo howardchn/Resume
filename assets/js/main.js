@@ -210,7 +210,7 @@ var appData = {
         {
             type: 'work',
             title: 'More',
-            description: 'I worked with .NET framework almost everyday during my job. Can issue the point very quickly. I have formalized standard coding style and can make it clean and fast. For the web, I can work with full-stack web application alone. I can manage my team, lead them to use traditional software development or use agile mode depending on the projects requirements and deadline. I have good speaking English and good ability to read and write english. My <a href="https://stackoverflow.com/users/703264/howard" target="_blank">stackoverflow</a> reputation now is 2k and in top 18% overall, it is keeping increasing. If you want to know more about me, please feel free to contact me by following ways.',
+            description: 'I worked with .NET framework almost everyday during my job. Can issue the point very quickly. I have formalized standard coding style and can make it clean and fast. For the web, I can work with full-stack web application alone. I can manage my team, lead them to use traditional software development or use agile mode depending on the projects requirements and deadline. I have good speaking English and good ability to read and write english. My <a href="https://stackoverflow.com/users/703264/howard" target="_blank">stackoverflow</a> reputation now is 2k and in top 17% overall, it is keeping increasing. If you want to know more about me, please feel free to contact me by following ways.',
             details: [
                 {
                     name: 'Cell Phone: +86-13540742190'
