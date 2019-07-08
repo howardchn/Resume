@@ -1,13 +1,20 @@
 var appDataCn = {
     title: '陈浩',
-    description: '擅长.NET框架下的控件和组件开发，桌面，网页前后端和移动端的程序设计及开发。具有8年多的项目组长及3年多技术总监的管理经验。',
-    currentPosition: '技术总监',
-    basicInfo: '男 ︳本科双学位 ︳ 14年工作经验 ︳现住成都',
+    description: '熟悉多种开发语言。具有2年产品经理，8年多的项目组长及3年多技术总监的管理经验。',
+    currentPosition: '技术产品经理',
+    basicInfo: '男 ︳本科双学位 ︳ 15年工作经验 ︳现住成都',
     experiences: [
         {
             type: 'work',
             title: '工作经验',
             details: [
+                {
+                    name: 'LogicMonitor',
+                    url: 'http://logicmonitor.com',
+                    summary: '高级产品经理',
+                    date: '2018/09 - Now',
+                    work: '负责新产品功能需求，分析，原型，任务计划以及上线前的相关协调工作.'
+                },
                 {
                     name: '思宙科技（ThinkGeo 中国办公室）',
                     url: 'http://thinkgeo.com',
@@ -47,6 +54,53 @@ var appDataCn = {
             type: 'work',
             title: '项目经验',
             details: [
+                {
+                    name: '智能告警压减',
+                    summary: '检测出异常以外的告警指标数据，并进行用户配置的策略进行压减。',
+                    date: '2019/05 - Present',
+                    work: '实现一套微服务，对现有用户收集的实时数据进行分析。使用调研的算法进行异常检测，并找到当前时段的置信区间。对置信区间以内的告警实例进行压减，减少用户收到的无用告警。这个项目里，需要对多种时序数据算法进行调研，并在现有的UI上设计可行的，易设置的交互体验原型。并为美国产品团队提供客户交流所需要的资源。并最终部署到云端。该项目实现已完成。等待上线中.'
+                },
+                {
+                    name: '时序数据异常可视化',
+                    url: 'https://www.logicmonitor.com/support/anomaly-detection-visualization',
+                    summary: '根据用户选定的一段时序数据进行分析，找到当前数据中的异常部分，并渲染出来，以图表形式展现给用户。同时在这个图表上还设计了一系列可用的辅助功能。',
+                    date: '2019/01 - 2019/05',
+                    work: '该项目是首次接触机器学习。项目中调研过各种对于时序数据进行异常检测的算法。用python进行原型设计和实现。并参与少量北美用户的调研会议。'
+                },
+                {
+                    name: 'Kubernetes 资源监控',
+                    url: 'https://logicmonitor.github.io/k8s-argus',
+                    summary: '这是一个用Go语言编写的Kubernetes应用。用来同步常用的k8s资源到LM平台，并进行监控。',
+                    date: '2018/11 - Present',
+                    work: '该项目用以实时检测用户k8s集群内部的各种资源的增删查改，并把改动同步到LM平台。并和监控组进行交互，并实现监控指标数据源的定义。这个项目已有很多用户，并在用户的反馈中持续更新迭代中。'
+                },
+                {
+                    name: 'StatsD 数据推送功能',
+                    summary: 'StatsD 是一个开源项目，支持推送的方式把用户数据发送到一个指定的平台。而该项目的目的就是支持用户推送数据到LM平台里。',
+                    date: '2018/04 - 2018/08',
+                    work: '该项目被定义为2个阶段。第一个阶段是支持用户推送数据的可视化。这个阶段中，用户可以看到推送的短期数据。我们实现了一系列SOA模块，针对后期扩展性，安全性进行了一些扩展设计。二阶段是准备支持数据持久化存储。由于美国产品团队调研不足，二期被推迟到2019年末。'
+                },
+                {
+                    name: '最近删除资源回收',
+                    url: 'https://www.logicmonitor.com/support/devices/adding-managing-devices/deleting-devices/#restoring',
+                    summary: '当用户在LM平台删除一个资源，会被永久删除掉。而往往用户删除后可能会返回，或者出现错误删除等情况时，希望能快速恢复被删除的设备。减少人工干预和减少恢复的时间。',
+                    date: '2018/03 - 2018/06',
+                    work: '这个项目中，除了以上提到的功能外，也学习到了从头开发一个功能和在现有功能上迭代的区别。开发难度和设计思维都是不同的。'
+                },
+                {
+                    name: '多时区支持',
+                    url: 'https://howardchn.github.io/2018/02/12/timezone-dst-best-practices/',
+                    summary: '多时区支持对国际化软件是一个重要的功能。该项目在LM平台上支持用户定义的多时区查看和计划事务设定。',
+                    date: '2018/01 - 2018/05',
+                    work: '通过该项目，要统筹改动对系统带来的影响，同时减少开发上的冲突。学习相关的时区知识（参考连接的输出内容）。同时设计时区支持扩展点的功能。'
+                },
+                {
+                    name: 'Windows collector 签名服务',
+                    name: 'Windows collector 签名服务功能设计，发布。',
+                    summary: '对现有windows collector进行签名，避免在用户安装时遇到不友好的Smart Screen。增强用户安装体验。',
+                    date: '2017/11  - 2018/01',
+                    work: '在这个项目中设计了一个独立的微服务。为达到高可用性，设计了一些容断机制。同时也学习了K8S相关知识，并完成了相关部署工作。'
+                },
                 {
                     name: 'Map Suite 10.0 产品维护',
                     summary: '负责带领研发组进行Map Suite 10.0维护和新特性添加',
@@ -137,9 +191,14 @@ var appDataCn = {
                     work: '使用NodeJS开发过一些小程序，及配合Express框架架构过1个中型网站. 开发过程中需要使用文档。'
                 }, {
                     name: 'Python',
-                    summary: '基础',
+                    summary: '了解',
                     date: '2016 - 2017',
-                    work: '学习过，暂没有深入研究。'
+                    work: '实现公司机器学习的原型和算法；并实现一系列工具进行部署和检查工作。'
+                }, {
+                    name: 'Go',
+                    summary: '熟悉',
+                    date: '2018 - 2019',
+                    work: '当前使用Go开发了几个开源软件；并提供现有公司的Go应用程序提供功能增强和维护。'
                 }
             ]
         },
