@@ -215,6 +215,8 @@ var appDataCn = {
                     name: '微信: Godspeedch'
                 }, {
                     name: '邮件地址: howardch@outlook.com'
+                }, {
+                    name: 'Blog: https://howardchn.github.io'
                 }
             ]
         }
