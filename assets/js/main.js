@@ -1,6 +1,6 @@
 var appData = {
     title: 'Howard Chen',
-    description: 'Good at build .NET components, application includes desktop, web full stack development. Have 8+ years of team leader and 3 years technical director experience.',
+    description: 'Good at .NET, Node.js, Python, Go programming language. Full-Stack Capability to build cross-platform application including desktop, web and mobile. Have 8+ years of team leader, 3 years technical director experience and almost 2 years technical product manager.',
     currentPosition: 'Senior Technical Product Manager',
     basicInfo: 'Male  ︳Bachelor Degree ︳ 15 years working experience  ︳Live in Chengdu',
     experiences: [
@@ -33,7 +33,7 @@ var appData = {
                     url: 'http://powercn.com',
                     summary: 'Junior Software Engineering',
                     date: '2003/12-2004/12',
-                    work: 'Software engineering traning and help on the website development. Also collect the wireless binary data to generate a nice looking report for viewing in browser.'
+                    work: 'Software engineering training and help on the website development. Also collect the wireless binary data to generate a nice looking report for viewing in browser.'
                 }
             ]
         },
@@ -95,7 +95,7 @@ var appData = {
                     work: 'Time zone is a big feature and important for enterprise software. Before this project, users has to manually convert timestamp from a certain time zone to a client time zone. We also allow to schedule the tasks for a specific time zone. It seems a simple project, still has some challenges if you don\'t have relative knowledges. Another challenge is that, we are building this feature upon a pretty stable system, we need to guarantee the function are not harmed by our newly feature, so we need to make decision on various situations. One interesting things we met is that, the time zone library provided by Java has different versions that are corresponded to Java version, so the UI client time zone database\'s version should be synced. After this project, I provided a company-wide presentation with this function and experience. This must helpful for the other developers. '
                 },
                 {
-                    name: 'Signtool service for windows collector',
+                    name: 'Sign-tool service for windows collector',
                     summary: 'Collector is an agent that allows for user to install on their machine. It helps to collect metrics based on the schema user defined on LM platform. If the windows agent is not signed, user will get a "friendly" smart screen during the installation. So the goal is to sign the windows collector on the fly, keep what the linux download process, don\'t increase the workload for our kernel services and guarantee users could get response in an acceptance period.',
                     date: '2017/11  - 2018/01',
                     work: 'Create a micro-service, extract the entire process from our kernel services out to the new service. To make sure it is high available, it is load-balanced by 4 pods. Lots of things to learn and establish during the implementation. After this project, one impression is the importance of kubernetes and load-balancer. Also I understand how to implement a circuit breaker and the benefit of stateless services.'
@@ -108,7 +108,7 @@ var appData = {
                 }, 
                 {
                     name: 'Map Suite 10.0 products maintenance',
-                    summary: 'Lead development team for Map Suite 10.0 maintenence',
+                    summary: 'Lead development team for Map Suite 10.0 maintenance',
                     date: '2017/03 - 2017/08',
                     work: 'Map Suite 10.0 products maintenance and new technology researching. Responsible for the bug fix from our customer; in the meantime, research new technology and prototype to build into the product line.'
                 }, {
@@ -145,7 +145,7 @@ var appData = {
                     name: 'Work in US for product supports',
                     summary: 'Work in US for product supports and maintenence.',
                     date: '2009/04 - 2009/07',
-                    work: 'Have a chance to work in US for existing products maintenence and customer supports. Also enlarge my view of the world.'
+                    work: 'Have a chance to work in US for existing products maintenance and customer supports. Also enlarge my view of the world.'
                 }, {
                     name: 'Map Suite Silverlight Edition',
                     summary: 'Design and develop the Map Suite Silverlight Edition',
@@ -161,7 +161,7 @@ var appData = {
                     name: 'GIL Data Front-End Data Importing System',
                     summary: 'Develop GIL Data Front-End Data Importing System',
                     date: '2008/01 - 2008/10',
-                    work: 'This project is a B/S application for inputing finance data everydata into database, then regroup the data to create beautiful chart and table for the final report.'
+                    work: 'This project is a B/S application for inputting finance data everyday into database, then regroup the data to create beautiful chart and table for the final report.'
                 }, {
                     name: 'PowerCN Wireless Signal Parser',
                     summary: 'Parse the wireless signal and input to database',
@@ -178,7 +178,7 @@ var appData = {
                     name: '.NET Framework',
                     summary: 'WPF, WebForms, WebAPI, C#, .NET Core, ASP.NET Core',
                     date: '2004 - 2017',
-                    work: '12 Years of working experience with .NET. Created hundreds of projects and samples; archetected 10+ map controls for desktop, web and mobile. Have the ability to quickly find bugs or issues deep in the project.'
+                    work: '12 Years of working experience with .NET. Created hundreds of projects and samples; designed 10+ map controls for desktop, web and mobile. Have the ability to quickly track bugs or issues deep in the project.'
                 }, {
                     name: 'Javascript',
                     summary: 'Pure Javascript, Typescript, JS framework like jQuery, Vue, lodash and Angular',
