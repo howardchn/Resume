@@ -177,11 +177,6 @@ var appDataCn = {
             title: '技能',
             details: [
                 {
-                    name: '.NET Framework',
-                    summary: 'WPF, WebForms, WebAPI, C#, .NET Core, ASP.NET Core',
-                    date: '2004 - 2017',
-                    work: '12年.NET框架下的开发经历。参与过上百个小型项目开发及10多个大型地图控件开发，涉及桌面，网页和移动平台。具有能在短期内找到问题，并解决的能力。对代码质量和风格有决定的标准。'
-                }, {
                     name: 'Node/JS',
                     summary: 'Pure Javascript, Typescript, Node.js',
                     date: '2004 - Now',
@@ -193,7 +188,7 @@ var appDataCn = {
                     work: '熟悉React，html, css开发。在现公司项目进度比较紧急的时候多次单人承担前后端项目。'
                 }, {
                     name: 'Python',
-                    summary: '了解',
+                    summary: '熟悉',
                     date: '2016 - Now',
                     work: '实现公司机器学习的原型和算法；并实现一系列工具进行离线数据统计。'
                 }, {
@@ -201,6 +196,16 @@ var appDataCn = {
                     summary: '熟悉',
                     date: '2018 - Now',
                     work: '当前使用Go开发了几个开源软件；并为现有公司开发需要用到Go特性的应用程序和工具。'
+                }, {
+                    name: 'Flutter',
+                    summary: '熟悉',
+                    date: '2021 - Now',
+                    work: '主动申请并成功追加至公司的技术栈，并使用该框架成功搭建了几条to C/to B的产品。'
+                }, {
+                    name: '.NET Framework',
+                    summary: 'WPF, WebForms, WebAPI, C#, .NET Core, ASP.NET Core',
+                    date: '2004 - 2017',
+                    work: '12年.NET框架下的开发经历。参与过上百个小型项目开发及10多个大型地图控件开发，涉及桌面，网页和移动平台。具有能在短期内找到问题，并解决的能力。对代码质量和风格有决定的标准。'
                 }
             ]
         },
