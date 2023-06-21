@@ -9,15 +9,22 @@ var appData = {
             title: 'Working Experience',
             details: [
                 {
+                    name: 'MobLab',
+                    url: 'https://moblab.com',
+                    summary: 'Technical Project Director',
+                    date: '2017/09 - 2020/04',
+                    work: 'Responsible for multiple product line, from design, architect, develop and final deliver to market; continue on the business data analysis and future product iteration.'
+                },
+                {
                     name: 'LogicMonitor',
-                    url: 'http://logicmonitor.com',
+                    url: 'https://logicmonitor.com',
                     summary: 'Senior Technical Project Manager',
-                    date: '2018/09 - Now',
-                    work: 'Responsible for managing to implement variegated requirements of extending our products.'
+                    date: '2017/09 - 2020/04',
+                    work: 'Responsible for managing variegated feature development lifecycle. Starting from requirements, design, review, and final function delivery.'
                 },
                 {
                     name: 'ThinkGeo China Office',
-                    url: 'http://thinkgeo.com',
+                    url: 'https://thinkgeo.com',
                     summary: 'Technical Director',
                     date: '2007/02 - 2017/08',
                     work: 'Responsible for major products architecture and development and maintenance. In this nearly three years, I worked as technical director in China office, responsible to communicate with US office and prototype new products and training.'
@@ -30,7 +37,7 @@ var appData = {
                 },
                 {
                     name: 'PowerCN',
-                    url: 'http://powercn.com',
+                    url: 'https://powercn.com',
                     summary: 'Junior Software Engineering',
                     date: '2003/12-2004/12',
                     work: 'Software engineering training and help on the website development. Also collect the wireless binary data to generate a nice looking report for viewing in browser.'

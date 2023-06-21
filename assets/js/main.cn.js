@@ -9,11 +9,18 @@ var appDataCn = {
             title: '工作经验',
             details: [
                 {
+                    name: 'MobLab',
+                    url: 'https://moblab.com',
+                    summary: 'Technical Project Director',
+                    date: '2017/09 - 2020/04',
+                    work: '负责公司多条产品线从0到1的设计，架构，研发，递交，以及后续的数据分析和迭代输出。同时间接的协助部分项目的开发。'
+                },
+                {
                     name: 'LogicMonitor',
                     url: 'http://logicmonitor.com',
-                    summary: '高级产品经理',
-                    date: '2018/09 - Now',
-                    work: '负责新产品功能需求，分析，原型，任务计划以及上线前的相关协调工作.'
+                    summary: '高级技术产品经理',
+                    date: '2017/09 - 2020/04',
+                    work: '负责新产品功能需求，分析，原型设计，任务计划以及上线前的相关协调工作.'
                 },
                 {
                     name: '思宙科技（ThinkGeo 中国办公室）',

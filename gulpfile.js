@@ -43,4 +43,5 @@ gulp.task('mainjs-cn', function() {
     .pipe(gulp.dest([relPath.pub, 'js'].join('/')))
 })
 
-gulp.task('build', ['bootcss', 'vue', 'img', 'maincss', 'mainjs', 'mainjs-cn'])
+// gulp.task('build', ['bootcss', 'vue', 'img', 'maincss', 'mainjs', 'mainjs-cn'])
+gulp.task('build', gulp.series('bootcss', 'vue', 'img', 'maincss', 'mainjs', 'mainjs-cn'));
