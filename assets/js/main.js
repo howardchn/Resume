@@ -13,7 +13,7 @@ var appData = {
                     url: 'https://moblab.com',
                     summary: 'Technical Project Director',
                     date: '2020/04 - Now',
-                    work: 'Responsible for multiple product lines, from design, architect, develop and final deliver to market; continue on the business data analysis and future product iteration.'
+                    work: 'The experience at MobLab is quite special. Because I\’m one of the initial employees of the Chengdu office. Build the company\'s project development infrastructure from scratch, including technology stack selection, monitoring, log project templates, agile management specifications, etc. Responsible for the design, architecture, R&D, submission, and subsequent data analysis and iterative output of the company\'s multiple product lines from 0 to 1. At the same time, indirectly assist the development of some projects.'
                 },
                 {
                     name: 'LogicMonitor',
@@ -217,7 +217,7 @@ var appData = {
         {
             type: 'work',
             title: 'More',
-            description: 'I worked with .NET framework almost everyday during my job. Can issue the point very quickly. I have formalized standard coding style and can make it clean and fast. For the web, I can work with full-stack web application alone. I can manage my team, lead them to use traditional software development or use agile mode depending on the projects requirements and deadline. I have good speaking English and good ability to read and write english. My <a href="https://stackoverflow.com/users/703264/howard" target="_blank">stackoverflow</a> reputation now is 2k and in top 17% overall, it is keeping increasing. If you want to know more about me, please feel free to contact me by following ways.',
+            description: 'I have good communication skills. Understand multiple programming languages and own corresponding project development experience. Ability to quickly estimate workload, build product prototypes, dig tech and prod details and control risks. On the Web side, I could play the role of a full-stack engineer. I have about 8 years of team management experience, more than 3 years of technical director, and 6 years of experience as a senior technical product manager. Can take the initiative to find and apply the product direction suitable for the company in the process of continuous learning of new technologies. Familiar with traditional software engineering and agile processes, and take into account the stability of the program while ensuring the progress. I have good English listening, speaking, reading and writing skills. In my spare time, I enjoy sharing open source projects and helping answer community questions.',
             details: [
                 {
                     name: 'Cell Phone: +86-13540742190'
