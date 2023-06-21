@@ -2,7 +2,7 @@ var appData = {
     title: 'Howard Chen',
     description: 'Good at .NET, Node.js, Python, Go, React, Dart programming language. Full-Stack Capability to build cross-platform application including desktop, web and mobile. Have 6 years of technical product manager (including 3 years director), 8+ years of team leader and 3 years technical director experience.',
     currentPosition: 'Senior Technical Product Manager',
-    basicInfo: 'Male  ︳Bachelor Degree ︳ 15 years working experience  ︳Live in Chengdu',
+    basicInfo: 'Male  ︳Bachelor Degree ︳ 19 years working experience  ︳Live in Chengdu',
     experiences: [
         {
             type: 'work',
@@ -182,42 +182,37 @@ var appData = {
             title: 'Skills',
             details: [
                 {
-                    name: '.NET Framework',
-                    summary: 'WPF, WebForms, WebAPI, C#, .NET Core, ASP.NET Core',
-                    date: '2004 - 2017',
-                    work: '12 Years of working experience with .NET. Created hundreds of projects and samples; designed 10+ map controls for desktop, web and mobile. Have the ability to quickly track bugs or issues deep in the project.'
+                    name: 'Node.js/JS',
+                    summary: 'My favorite programming language',
+                    date: '2016 - Present',
+                    work: 'Use this language almost every day, for various purpose, like product API development, tools and some POC work.'
                 }, {
-                    name: 'Javascript',
-                    summary: 'Pure Javascript, Typescript, JS framework like jQuery, Vue, lodash and Angular',
-                    date: '2004 - 2018',
-                    work: 'Learned it very early; used it in 2 official projects and several sample projects and website. The pure JS is very familiar, but with the 3rd party JS library, I still need to search documentations.'
-                }, {
-                    name: 'Html + CSS',
-                    summary: 'Html and CSS, used bootstrap a lot',
-                    date: '2004 - 2018',
-                    work: 'Familiar with Html and CSS, can build a webpage very fast with bootstrap. Willing to learn the others.'
-                }, {
-                    name: 'NodeJS',
-                    summary: 'Nomal Level',
-                    date: '2016 - 2018',
-                    work: 'Use NodeJS to create some tools and use Express to build two entire websites. Can use with documents.'
+                    name: 'Frontend',
+                    summary: 'Html, CSS, React...',
+                    date: '2004 - Present',
+                    work: 'Familiar with React, html, css development. When the current company\'s project progress is relatively urgent, I sometimes take on front-end on my own.'
                 }, {
                     name: 'Python',
-                    summary: 'Basic Level',
+                    summary: 'Normal Level',
                     date: '2016 - 2019',
-                    work: 'Know the basics, but no chance to deeg more.'
+                    work: 'Built algorithm based server and several data analyze utilities.'
                 }, {
                     name: 'Go',
                     summary: 'Normal Level',
                     date: '2018 - 2019',
-                    work: 'Has two open source projects. One is for cleaning relative resources from the kubernetes monitoring tool from LM platform. Another one is about r-tree.'
+                    work: 'Built two open source projects. I like this '
+                }, {
+                    name: '.NET Framework',
+                    summary: 'WPF, WebForms, WebAPI, C#, .NET Core, ASP.NET Core',
+                    date: '2004 - 2017',
+                    work: '12 Years of working experience with .NET. Created hundreds of projects and samples; designed 10+ map controls for desktop, web and mobile. Have the ability to quickly track bugs or issues deep in the project.'
                 }
             ]
         },
         {
             type: 'work',
             title: 'More',
-            description: 'I have good communication skills. Understand multiple programming languages and own corresponding project development experience. Ability to quickly estimate workload, build product prototypes, dig tech and prod details and control risks. On the Web side, I could play the role of a full-stack engineer. I have about 8 years of team management experience, more than 3 years of technical director, and 6 years of experience as a senior technical product manager. Can take the initiative to find and apply the product direction suitable for the company in the process of continuous learning of new technologies. Familiar with traditional software engineering and agile processes, and take into account the stability of the program while ensuring the progress. I have good English listening, speaking, reading and writing skills. In my spare time, I enjoy sharing open source projects and helping answer community questions.',
+            description: 'I have good communication skills. Understand multiple programming languages and own corresponding project development experience. Ability to quickly estimate workload, build product prototypes, dig tech and prod details and control risks. On the Web side, I could play the role of a full-stack engineer. I have about 8 years of team management experience, more than 3 years of technical director, and 6 years of experience as a senior technical product manager. Can take the initiative to find and apply the product direction suitable for the company in the process of continuous learning of new technologies. Familiar with traditional software engineering and agile processes, and take into account the stability of the program while ensuring the progress. I have good English listening, speaking, reading and writing skills. Here lists some of my social contributions:<br/><br/><ol start="1"><li>Current <a href="https://stackoverflow.com/users/703264/howard">StackOverflow</a> contribution is 3.5K+, top 11% overall the world. I feel good to help others in the social network.</li><li>OpenSourced A GeoSpatial Map Server SDK built on Node.js - <a href="https://ginkgoch.com/">Ginkgoch</a>. Supports geo-spatial calculation, multiple data source, map styling and rendering features. Also includes complete demo code and documents.</li><li>OpenSourced a Golang version lodash SDK - <a href="https://github.com/ginkgoch/godash">Godash</a>. Recently I upgraded it to v2 for generic support.</li><li>This is an interesting project (<a href="https://github.com/howardchn/location-to-phone-number">https://github.com/howardchn/location-to-phone-number</a>). It was a training project but got 170 stars. It indicates the user case is much more important than the code it self.</li></ol>',
             details: [
                 {
                     name: 'Cell Phone: +86-13540742190'

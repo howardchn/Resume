@@ -2,7 +2,7 @@ var appDataCn = {
     title: '陈浩',
     description: '熟悉多种开发语言(.NET, Node.js, Python, Go, React, Dart)，全栈能力。具有6年技术产品经理（包含3年技术产品总监），8年多的项目组长，3年多技术总监的管理经验。',
     currentPosition: '技术产品经理',
-    basicInfo: '男 ︳本科双学位 ︳ 15年工作经验 ︳现住成都',
+    basicInfo: '男 ︳本科双学位 ︳ 19年工作经验 ︳现住成都',
     experiences: [
         {
             type: 'work',
@@ -177,29 +177,29 @@ var appDataCn = {
             title: '技能',
             details: [
                 {
-                    name: 'Node/JS',
+                    name: 'Node.js/JS',
                     summary: 'Pure Javascript, Typescript, Node.js',
-                    date: '2004 - Now',
+                    date: '2004 - Present',
                     work: '接触时间很早，在工作前期常用于工具和中间件开发，后期多用户产品服务后端搭建，以及前端实现。也是个人的开源项目的主力开发语言。'
                 }, {
-                    name: 'Frontend (Html, CSS, React)',
-                    summary: 'Html and CSS, used bootstrap a lot',
-                    date: '2004 - Now',
+                    name: 'Frontend',
+                    summary: 'Html, CSS, React...',
+                    date: '2004 - Present',
                     work: '熟悉React，html, css开发。在现公司项目进度比较紧急的时候多次单人承担前后端项目。'
                 }, {
                     name: 'Python',
                     summary: '熟悉',
-                    date: '2016 - Now',
+                    date: '2016 - Present',
                     work: '实现公司机器学习的原型和算法；并实现一系列工具进行离线数据统计。'
                 }, {
                     name: 'Go',
                     summary: '熟悉',
-                    date: '2018 - Now',
+                    date: '2018 - Present',
                     work: '当前使用Go开发了几个开源软件；并为现有公司开发需要用到Go特性的应用程序和工具。'
                 }, {
                     name: 'Flutter',
                     summary: '熟悉',
-                    date: '2021 - Now',
+                    date: '2021 - Present',
                     work: '主动申请并成功追加至公司的技术栈，并使用该框架成功搭建了几条to C/to B的产品。'
                 }, {
                     name: '.NET Framework',
