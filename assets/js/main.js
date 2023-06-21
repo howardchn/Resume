@@ -1,6 +1,6 @@
 var appData = {
     title: 'Howard Chen',
-    description: 'Good at .NET, Node.js, Python, Go programming language. Full-Stack Capability to build cross-platform application including desktop, web and mobile. Have 8+ years of team leader, 3 years technical director experience and almost 2 years technical product manager.',
+    description: 'Good at .NET, Node.js, Python, Go, React, Dart programming language. Full-Stack Capability to build cross-platform application including desktop, web and mobile. Have 6 years of technical product manager (including 3 years director), 8+ years of team leader and 3 years technical director experience.',
     currentPosition: 'Senior Technical Product Manager',
     basicInfo: 'Male  ︳Bachelor Degree ︳ 15 years working experience  ︳Live in Chengdu',
     experiences: [
@@ -12,7 +12,7 @@ var appData = {
                     name: 'MobLab',
                     url: 'https://moblab.com',
                     summary: 'Technical Project Director',
-                    date: '2017/09 - 2020/04',
+                    date: '2020/04 - Now',
                     work: 'Responsible for multiple product lines, from design, architect, develop and final deliver to market; continue on the business data analysis and future product iteration.'
                 },
                 {

@@ -1,6 +1,6 @@
 var appDataCn = {
     title: '陈浩',
-    description: '熟悉多种开发语言。具有2年产品经理，8年多的项目组长及3年多技术总监的管理经验。',
+    description: '熟悉多种开发语言(.NET, Node.js, Python, Go, React, Dart)，全栈能力。具有6年技术产品经理（包含3年技术产品总监），8年多的项目组长，3年多技术总监的管理经验。',
     currentPosition: '技术产品经理',
     basicInfo: '男 ︳本科双学位 ︳ 15年工作经验 ︳现住成都',
     experiences: [
@@ -12,7 +12,7 @@ var appDataCn = {
                     name: 'MobLab',
                     url: 'https://moblab.com',
                     summary: 'Technical Project Director',
-                    date: '2017/09 - 2020/04',
+                    date: '2020/04 - Now',
                     work: '负责公司多条产品线从0到1的设计，架构，研发，递交，以及后续的数据分析和迭代输出。同时间接的协助部分项目的开发。'
                 },
                 {
