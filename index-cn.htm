@@ -33,16 +33,16 @@
                         <h3>{{content.title}}</h3>
                     </header>
                     <div v-if="content.description" v-html="content.description"></div>
-                    <ul>
-                        <li class="row" v-for="work in content.details">
-                            <div>
-                                <h5 v-if="work.url"><a v-bind:href="work.url" target="_blank">{{work.name}}</a></h5>
-                                <h5 v-else>{{work.name}}</h5>
-                                <div v-if="work.summary">{{work.summary}} ({{work.date}})</div>
-                                <div v-if="work.work">{{work.work}}</div>
-                            </div>
-                        </li>
-                    </ul>
+                    
+                    <div class="row" v-for="work in content.details">
+                        <div style="float:left; margin-right: 5px;" v-if="work.logo"><img v-bind:src="work.logo" /></div>
+                        <div>
+                            <h5 v-if="work.url"><a v-bind:href="work.url" target="_blank">{{work.name}}</a></h5>
+                            <h5 v-else>{{work.name}}</h5>
+                            <div v-if="work.summary">{{work.summary}} ({{work.date}})</div>
+                            <div v-if="work.work">{{work.work}}</div>
+                        </div>
+                    </div>
                 </section>
             </li>
         </ul>
