@@ -13,7 +13,7 @@ var appData = {
                     url: 'https://moblab.com',
                     summary: 'Technical Project Director',
                     date: '2017/09 - 2020/04',
-                    work: 'Responsible for multiple product line, from design, architect, develop and final deliver to market; continue on the business data analysis and future product iteration.'
+                    work: 'Responsible for multiple product lines, from design, architect, develop and final deliver to market; continue on the business data analysis and future product iteration.'
                 },
                 {
                     name: 'LogicMonitor',
