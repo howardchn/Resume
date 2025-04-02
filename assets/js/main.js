@@ -14,7 +14,7 @@ var appData = {
                     url: 'https://empathia.ai',
                     summary: 'Technical Project Director',
                     date: '2023/10 - Now',
-                    work: 'Empathia is a startup company that focuses on AI scribing for healthcare assistant. Empathia and the previous company were created by the same owner and were formed by several key members from the previous company who moved over. Although my title is Director, I am actually mainly responsible for the design, development, testing, and release of several major products in the product family, as well as subsequent iterations.',
+                    work: "Empathia is a startup company that focuses on AI scribing for healthcare assistant. Empathia and the previous company were created by the same owner and were formed by several key members from the previous company who moved over. As a director, responsible for the design, development, coordination, and testing release of multiple key products in the product family, as well as subsequent iterations. Consider comprehensively the interaction with other modules and the future development direction in the product lines I'm responsible for.",
                 },
                 {
                     name: 'MobLab',
