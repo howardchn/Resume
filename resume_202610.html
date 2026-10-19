@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Howard Chen — Resume</title>
+<style>
+  :root {
+    --ink: #1a2332;
+    --body: #2d3748;
+    --muted: #64748b;
+    --faint: #94a3b8;
+    --accent: #1f4e79;
+    --accent-soft: #e8eef5;
+    --line: #e2e8f0;
+    --paper: #ffffff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { -webkit-font-smoothing: antialiased; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--body);
+    background: #f1f3f6;
+  }
+
+  .paper {
+    max-width: 860px;
+    margin: 32px auto;
+    background: var(--paper);
+    padding: 56px 64px 48px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 8px 30px rgba(0,0,0,.06);
+  }
+
+  /* ---------- Header ---------- */
+  header { margin-bottom: 28px; }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: .5px;
+    line-height: 1.2;
+  }
+
+  .headline {
+    font-size: 14.5px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  .contact-bar {
+    margin-top: 10px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+
+  .contact-bar a { color: var(--muted); text-decoration: none; }
+  .contact-bar a:hover { color: var(--accent); }
+  .contact-bar span.sep { margin: 0 8px; color: var(--faint); }
+
+  .basic-info {
+    margin-top: 4px;
+    font-size: 12.5px;
+    color: var(--faint);
+  }
+  .basic-info span.sep { margin: 0 8px; }
+
+  /* ---------- Sections ---------- */
+  section { margin-top: 30px; }
+
+  h2 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .summary { font-size: 13.5px; color: var(--body); }
+  .summary .role-line { margin-top: 8px; font-size: 12.5px; color: var(--muted); }
+  .summary .role-line strong { color: var(--body); }
+
+  /* ---------- Entry (experience / project) ---------- */
+  .entry { margin-bottom: 18px; page-break-inside: avoid; }
+
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .entry-title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .entry-title a { color: inherit; text-decoration: none; }
+  .entry-title a:hover { color: var(--accent); text-decoration: underline; }
+
+  .entry-sub {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 1px;
+  }
+
+  .entry-date {
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .entry-body { margin-top: 5px; }
+  .entry-body p { margin-top: 4px; }
+
+  .label {
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .role-text { color: var(--muted); }
+
+  strong { color: var(--ink); font-weight: 650; }
+
+  a.link {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a.link:hover { text-decoration: underline; }
+
+  /* ---------- Education ---------- */
+  .edu-desc { margin-top: 4px; color: var(--muted); }
+
+  /* ---------- Skills ---------- */
+  .skill { margin-bottom: 10px; page-break-inside: avoid; }
+
+  .skill-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .skill-name { font-weight: 700; color: var(--ink); font-size: 13.5px; }
+
+  .pill {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 1px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+  .pill.expert   { background: #dcfce7; color: #166534; }
+  .pill.advanced { background: var(--accent-soft); color: var(--accent); }
+  .pill.normal   { background: #f1f5f9; color: var(--muted); }
+
+  .skill-meta { font-size: 12.5px; color: var(--faint); margin-top: 1px; }
+  .skill-desc { margin-top: 3px; color: var(--muted); font-size: 13px; }
+
+  /* ---------- More / contributions ---------- */
+  .more-desc { margin-bottom: 14px; }
+
+  ol.contrib { padding-left: 20px; }
+  ol.contrib li { margin-bottom: 8px; page-break-inside: avoid; }
+  ol.contrib a { color: var(--accent); text-decoration: none; word-break: break-all; }
+  ol.contrib a:hover { text-decoration: underline; }
+
+  .contact-list { font-size: 13px; line-height: 1.9; }
+  .contact-list strong { display: inline-block; min-width: 96px; font-weight: 600; color: var(--ink); }
+
+  /* ---------- Print button (screen only) ---------- */
+  .print-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(31,78,121,.35);
+  }
+  .print-btn:hover { background: #173d5f; }
+
+  /* ---------- Print ---------- */
+  @page { size: A4; margin: 14mm 15mm; }
+
+  @media print {
+    body { background: #fff; font-size: 11.5px; }
+    .paper {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+    .print-btn { display: none; }
+    a { color: inherit; text-decoration: none; }
+    h2 { margin-top: 20px; }
+    section { margin-top: 18px; }
+    .entry { margin-bottom: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="paper">
+
+  <!-- ============ Header ============ -->
+  <header>
+    <h1>Howard Chen</h1>
+    <div class="headline">Product Manager @ PingCap (TiDB)</div>
+    <div class="contact-bar">
+      <a href="mailto:howardch@outlook.com">howardch@outlook.com</a><span class="sep">·</span>
+      +86-13540742190<span class="sep">·</span>
+      WeChat: Godspeedch<span class="sep">·</span>
+      <a href="https://howardchn.github.io" target="_blank">howardchn.github.io</a><span class="sep">·</span>
+      Chengdu, China
+    </div>
+    <div class="basic-info">Male<span class="sep">|</span>Bachelor's Degree<span class="sep">|</span>23 years of working experience</div>
+  </header>
+
+  <!-- ============ Summary ============ -->
+  <section>
+    <h2>Summary</h2>
+    <div class="summary">
+      <p>Good at .NET, Node.js, Python, Go, React, Dart programming language. Full-stack capability to build cross-platform applications including desktop, web and mobile. Have 9 years of technical product management experience (including 4 years as director), 8+ years of team leader and 3 years technical director experience. Currently focused on distributed database product management, covering kernel feature design and multi-plan cloud delivery.</p>
+    </div>
+  </section>
+
+  <!-- ============ Working Experience ============ -->
+  <section>
+    <h2>Working Experience</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title"><a href="https://pingcap.com" target="_blank">PingCap</a></div>
+          <div class="entry-sub">Product Manager</div>
+        </div>
+        <div class="entry-date">2025/05 – Now</div>
+      </div>
+      <div class="entry-body">
+        <p>PingCap is the company behind TiDB, a distributed SQL database. I joined as the Cloud Dedicated PM, responsible for SKA (Strategic Key Account) feature design and delivery, regional customer success, and frontline training for TSE and pre-sales. <strong>Within half a year, my strong technical foundation was recognized — with 10+ years of hands-on engineering experience, I could read kernel/backend/frontend code, validate features myself and speak the same language as the R&amp;D team — and I was promoted to the Kernel PM role</strong>, independently owning four kernel workstreams (Changefeed, Backup &amp; Restore, Logging, TiProxy) and driving the end-to-end feature closed loop from kernel design to all cloud plans (Dedicated / Premium / Essential).</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title"><a href="https://empathia.ai" target="_blank">Empathia</a></div>
+          <div class="entry-sub">Technical Product Director</div>
+        </div>
+        <div class="entry-date">2023/10 – 2025/05</div>
+      </div>
+      <div class="entry-body">
+        <p>Empathia is a startup company that focuses on AI scribing for healthcare assistants. It is a sister company of MobLab, founded by the same owner. As this new business spun up, a small team of key members was hand-picked from MobLab to join Empathia, and I was one of them. I designed and developed the prototype of the company's current product for fundraising. Later, responsible for the design, development, coordination, testing, and release of multiple major products in the product family, as well as subsequent iterations. Additionally, for several product lines under my responsibility, I comprehensively considered the interaction with other modules and the future development direction.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title"><a href="https://moblab.com" target="_blank">MobLab</a></div>
+          <div class="entry-sub">Technical Product Director</div>
+        </div>
+        <div class="entry-date">2020/04 – 2023/10</div>
+      </div>
+      <div class="entry-body">
+        <p>One of the initial employees of the Chengdu office. Built the company's project development infrastructure from scratch, including technology stack selection, monitoring, log project templates, agile management specifications, etc. Responsible for the design, architecture, R&amp;D, submission, and subsequent data analysis and iterative output of the company's multiple product lines from 0 to 1. At the same time, indirectly assist the development of some projects.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title"><a href="https://logicmonitor.com" target="_blank">LogicMonitor</a></div>
+          <div class="entry-sub">Senior Technical Product Manager</div>
+        </div>
+        <div class="entry-date">2017/09 – 2020/04</div>
+      </div>
+      <div class="entry-body">
+        <p>Responsible for managing variegated feature development lifecycle, starting from requirements, design, review, and final function delivery.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title"><a href="https://thinkgeo.com" target="_blank">ThinkGeo China Office</a></div>
+          <div class="entry-sub">Technical Director</div>
+        </div>
+        <div class="entry-date">2007/02 – 2017/08</div>
+      </div>
+      <div class="entry-body">
+        <p>Responsible for major products architecture and development and maintenance. Worked as technical director in the China office, responsible for communication with the US office, prototyping new products and training.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title">GIL Data</div>
+          <div class="entry-sub">Senior Software Engineer</div>
+        </div>
+        <div class="entry-date">2005/02 – 2007/11</div>
+      </div>
+      <div class="entry-body">
+        <p>Responsible for company website, back-end finance analysis service, front-end management system and generate reports for viewing in browser.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title"><a href="https://powercn.com" target="_blank">PowerCN</a></div>
+          <div class="entry-sub">Junior Software Engineer</div>
+        </div>
+        <div class="entry-date">2003/12 – 2004/12</div>
+      </div>
+      <div class="entry-body">
+        <p>Software engineering training and help on the website development. Also collect the wireless binary data to generate a nice looking report for viewing in browser.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Education ============ -->
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Sichuan University</div>
+        <div class="entry-date">2000 – 2004</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Dual Bachelor's Degree</span> — Painting and Design (First Major) + Software Engineering (Second Major)</p>
+        <p class="edu-desc">Design major learns graphics designing and painting; Software Engineering learns the software development and computer science.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Projects Detail ============ -->
+  <section>
+    <h2>Projects Detail</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Data Pipeline (TiDB2Lake)</div>
+        <div class="entry-date">2025/09 – Now</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Standardized TiDB → Lake data pipeline as the shortest path for AP/analytics customers to egress data into the lakehouse (Iceberg open table format), serving the TiDB X strategy.</p>
+        <p class="role-text"><span class="label">Role:</span> Drove the integration choice (open table format instead of direct vendor sinks or a Fivetran-style middle layer) to lower customer cost and keep extensibility. Built the standardized flow, SOP, CloudFormation templates and self-service UI, cutting a full + incremental pipeline setup from 15–20 minutes to under 3 minutes with a much lower error rate. Opened up AliCloud, BYOC and delivered the DDL/DML/type compatibility matrix. Received positive feedback from early adopters (Mithra, Plaud), with 15 uses within the first week of private preview.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">TiDB Cloud OpenAPI v1beta1 &amp; API Governance</div>
+        <div class="entry-date">2025/08 – 2025/11</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Led the ecosystem effort to launch the Dedicated OpenAPI (v1beta1), the foundation of automated, programmatic cluster management for enterprise customers.</p>
+        <p class="role-text"><span class="label">Role:</span> Defined the Org/Project-wide API key roles (RBAC) and built the governance framework for future API development, including design guidelines (aligned with Google AIP standards), release checklist and automated testing guide. To remove the API review bottleneck, I developed an AI-powered "API Reviewer" agent for automated swagger feedback and a swagger consolidation tool, reducing manual release overhead across 3 teams. Delivered batch-1 API docs end to end, including descriptions, examples and curl demos.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Changefeed: Operability &amp; Multi-Plan Standardization</div>
+        <div class="entry-date">2025/06 – Now</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Evolved changefeed from a set of per-plan features into a standardized, cross-plan capability with a much better operational experience.</p>
+        <p class="role-text"><span class="label">Role:</span> Shipped high-value operability features from real customer pain points: Changefeed Duplication (324 uses in half a year), Resume Failed Changefeed (42 uses), non-disruptive Summary View (1,122+ views), column value filter and debezium-avro before/after semantics. Then, as Kernel PM, consolidated scattered capabilities (MSK, cloud storage, table routing, new architecture) into reusable cross-plan features and led the Essential v1 migration to the new architecture — the new arch is now the default on Dedicated with zero user impact, and the legacy replication worker has been retired.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Enterprise Security &amp; Compliance (CMEK / Auditing / Redaction)</div>
+        <div class="entry-date">2025/06 – 2025/09</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Shipped the enterprise security suite for Dedicated Cloud, driven by SKA customers (Aeon, CTW, Wetech, Mercari, Coincheck, Rivus Pay, etc.).</p>
+        <p class="role-text"><span class="label">Role:</span> Drove CMEK on AWS and Azure to GA, including Azure Resource Manager templates for easy key configuration, and proactively relaxed the "one project, one key" rule to per-region keys for multi-region customers. Delivered Database Auditing v2 (redesigned plugin &amp; rotation), discovering 27 issues in staging validation before customers hit them and sharing findings with other teams. Launched user-controlled log redaction UI, replacing complex manual SOPs and eliminating 32+ TCOC engineering interventions.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">SKA Feature Delivery &amp; Regional Customer Success</div>
+        <div class="entry-date">2025/05 – Now</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Owned SKA (Strategic Key Account) feature design and delivery for enterprise customers across the APAC region (Mercari, Cygames, Wetech, Plaud, CTW, Aeon, etc.), serving as the bridge between regional customer success and R&amp;D.</p>
+        <p class="role-text"><span class="label">Role:</span> Covered security, compliance, data pipeline and changefeed scenarios end to end. Drove data connectivity features — TiCDC Private Link (Dedicated ↔ Dedicated/Premium), S3/Azure Blob sinks with IAM role support, and idle endpoint auto-recycle for cost optimization. Did frontline training and enablement for TSE and pre-sales on new features, and pushed OpenAPI self-service so customers could complete configurations (e.g. S3 sink) without manual support.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Empathia Knowledge Base System</div>
+        <div class="entry-date">2024/10 – 2025/05</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> A powerful knowledge management system designed to support the needs of the Empathia AI Family. It allows users to upload massive amount of documents including PDF, txt, images, word files, and convert them into text content and store original text and vectors in the system. Then it could be used to search and compose new documents based on uploaded materials. The internal testers are real doctors and very few lawyers and the feedback seems positive so far.</p>
+        <p class="role-text"><span class="label">Role:</span> I'm the designer, developer and product manager for this project. The system is built on React, Node.js and utilizes MongoDB and Chroma for vector storage. The major challenge is to build almost real-time search and compose system over massive uploaded files. Recently, the embedding model is upgraded by OpenAI which is not considered before. I'm still working on it to make it compatible with the new model.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Empathia Audio Server</div>
+        <div class="entry-date">2024/06 – 2025/05</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> A powerful audio processing server designed to handle all the audio related needs in the Empathia AI Family. It provides a robust backend for audio recording, transcription, and analysis, ensuring that clinicians can efficiently manage their audio data. The server is built on Golang and utilizes WebRTC for real-time audio streaming, making it a critical component of the Empathia AI ecosystem.</p>
+        <p class="role-text"><span class="label">Role:</span> I'm the only developer for this project. It mainly uses Golang and OpenAI Speech to text service to archive the audio to transcript and store the audio files safely. Other than that, the audios has various kinds of problem to impact the transcription, like volume low, noise, silence gap, multilingual, and some minor languages, and data lost on client etc. Thus resolving all those issues is part of challenges in this service. The project was iterated until 2025/05.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://empathia.ai" target="_blank">Empathia AI Chrome Extension</a></div>
+        <div class="entry-date">2023/10 – 2025/05</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> A powerful Chrome extension designed to seamlessly integrate with clinicians' workflows, allowing them to access a robust AI-powered medical assistant directly within their EMR systems. With this extension, clinicians can efficiently record conversations alongside their EMR, supporting multilingual dictation and eliminating after-hours administrative tasks. Empathia AI enhances patient care by automating note generation and offering customizable templates, all within a user-friendly interface that's robust enough to function even offline, allowing clinicians to prioritize patient care over paperwork.</p>
+        <p class="role-text"><span class="label">Role:</span> Responsible for all workflow design and development. In this project, I used many new features provide by Extension APIs such as Service Worker, messenger, side-panel, content script and offscreen etc. and some cool features from web, like WebRTC, indexdb to build good experience on audio recording, offline mode, in page web scan including PDF and images, silence detection and notification etc. I also sort out the requirements from customer success team and make it real. The project was iterated until 2025/05, and at its peak it served 1500+ user per day.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">MobLab Kids</div>
+        <div class="entry-date">2020/06 – 2022/12</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> An app that uses behavioral games to evaluate and track various skill metrics for children aged 3-8, while also offering expert recommendations. This app has also developed a range of related SaaS services and apps, such as a daycare journal, a daily training knowledge system, and a kindergarten management SaaS system.</p>
+        <p class="role-text"><span class="label">Role:</span> Responsible for the design, architecture, R&amp;D, submission, core feature development, and subsequent data analysis and iterative output of the entire product line. The product line includes two mobile apps (to C/B) developed with Flutter, a web app developed by React, and a backend service (SaaS based for multi tenant) developed by Node.js. The entire product line is built on a microservice architecture. The backend service is deployed on AWS and uses MongoDB as the major database. Also it uses OpenAI services to support many features, like teacher/parents chat, build training plan, generate knowledge base for kids growth, etc.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Learning Behavior Analysis System</div>
+        <div class="entry-date">2020/04 – 2020/08</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> This system, initially developed for GSX, analyzes student behavior in online classes and has since been expanded to a multi-tenant model, providing SaaS services to Zuoyebang and the Open University. It consists of a behavior data ingestion system, analysis services, and a front-end display platform. Zuoyebang extracts behavioral data such as class attendance, screen presence, eye movements, and post-class activities daily from its Hadoop database and uploads it to Alibaba Cloud OSS storage. We regularly fetch, incrementally update, and clean this data before storing it in a MySQL database for the data science team. The team trains these data weekly to generate models and produces daily reports on each student's performance. GSX teachers use the system to track student progress, develop learning plans, and facilitate communication with parents by providing suggestions and discussion topics.</p>
+        <p class="role-text"><span class="label">Role:</span> Responsible for the UX design, architecture, R&amp;D, submission, and communicate with GSX and Zuoyebang for the entire product line. Also responsible for data ingestion and cooperate with data science team for the interface design and development and part of UI development tasks.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Anomaly based alert suppression</div>
+        <div class="entry-date">2019/05 – 2020/04</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Determine non-anomaly alerts and suppress them intelligently.</p>
+        <p class="role-text"><span class="label">Role:</span> It is the biggest project here so far since I joined LM. Anomaly based alert suppression is one factor. The biggest challenge is to kick start the micro-service transferring and move parts our infrastructures into cloud.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://www.logicmonitor.com/support/anomaly-detection-visualization" target="_blank">Anomaly visualization</a></div>
+        <div class="entry-date">2019/01 – 2019/05</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> This project is to detect anomalies based on a period of metrics. After finding out the anomalies by machine learning algorithms, we could render the anomalies on a graph widget and some corresponding functions around it.</p>
+        <p class="role-text"><span class="label">Role:</span> In this project, we need to learn machine learning. Talk to few trail users. Design the UI experience based on existing LM platform and make it publish. With this project, I learned a lot of the anomaly detection knowledge based on time-serials.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://logicmonitor.github.io/k8s-argus" target="_blank">Kubernetes Resource Monitoring</a></div>
+        <div class="entry-date">2018/11 – Now</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> This is kubernetes application written by go. It syncs frequently used k8s resources into LogicMonitor platform and keep them monitored.</p>
+        <p class="role-text"><span class="label">Role:</span> What our job is to create the application to discover the k8s resources and keep watching the CRUD of the resources changing. This project is released but requires more new features based on the market feedback.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Push metrics for StatsD</div>
+        <div class="entry-date">2018/04 – 2018/08</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> StatsD is an open source project that allows user to push their metrics as a unified data format into a specified destination which in our case, LogicMonitor platform is its destination.</p>
+        <p class="role-text"><span class="label">Role:</span> This project is separated to two phases. Phase 1 targets for visualization. The metrics are not persistent in our system. With this project, we setup several layers SOAs for various purpose like extension, data format, authentication as well as metrics center. Phase 2 targets to the metrics persistence. It is a big challenge for product team and dev team. So we took it very carefully. Due to the requirement part doesn't have a final agreement with customer, phase 2 feature is being hold right now and it will be bring up again till we got enough user cases by the end of 2019.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://www.logicmonitor.com/support/devices/adding-managing-devices/deleting-devices/#restoring" target="_blank">Recycle bin for recently deleted resources</a></div>
+        <div class="entry-date">2018/03 – 2018/06</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> In the old system, when user deletes a resource from our system, it is a permanent deletion. In this case, some users might delete their devices unexpectedly or by some other manager, or want to delete at the moment but regret after that, there is not case for users to restore them back. This feature is designed for those pain points.</p>
+        <p class="role-text"><span class="label">Role:</span> In this project, one good thing I have learned is that, if you design a feature from scratch, it is quite easy, but if you stack new features on top of a stable system, there are lots of things to consider; including the association with ops team.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://howardchn.github.io/2018/02/12/timezone-dst-best-practices/" target="_blank">User based time zone</a></div>
+        <div class="entry-date">2018/01 – 2018/05</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Support time zone customization on LM platform.</p>
+        <p class="role-text"><span class="label">Role:</span> Time zone is a big feature and important for enterprise software. Before this project, users has to manually convert timestamp from a certain time zone to a client time zone. We also allow to schedule the tasks for a specific time zone. It seems a simple project, still has some challenges if you don't have relative knowledges. Another challenge is that, we are building this feature upon a pretty stable system, we need to guarantee the function are not harmed by our newly feature, so we need to make decision on various situations. One interesting things we met is that, the time zone library provided by Java has different versions that are corresponded to Java version, so the UI client time zone database's version should be synced. After this project, I provided a company-wide presentation with this function and experience. This must helpful for the other developers.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Sign-tool service for windows collector</div>
+        <div class="entry-date">2017/11 – 2018/01</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Collector is an agent that allows for user to install on their machine. It helps to collect metrics based on the schema user defined on LM platform. If the windows agent is not signed, user will get a "friendly" smart screen during the installation. So the goal is to sign the windows collector on the fly, keep what the linux download process, don't increase the workload for our kernel services and guarantee users could get response in an acceptance period.</p>
+        <p class="role-text"><span class="label">Role:</span> Create a micro-service, extract the entire process from our kernel services out to the new service. To make sure it is high available, it is load-balanced by 4 pods. Lots of things to learn and establish during the implementation. After this project, one impression is the importance of kubernetes and load-balancer. Also I understand how to implement a circuit breaker and the benefit of stateless services.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Manage to implement variegated requirements</div>
+        <div class="entry-date">2017/03 – 2017/08</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Lead development team and communicate the requirements with US office.</p>
+        <p class="role-text"><span class="label">Role:</span> Research the new requirements, and communicate with US office to make the final version of the PRD. Estimate time for the implementation and control the time-line of the entire project development till it is released.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Map Suite 10.0 products maintenance</div>
+        <div class="entry-date">2017/03 – 2017/08</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Lead development team for Map Suite 10.0 maintenance.</p>
+        <p class="role-text"><span class="label">Role:</span> Map Suite 10.0 products maintenance and new technology researching. Responsible for the bug fix from our customer; in the meantime, research new technology and prototype to build into the product line.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://thinkgeo.com" target="_blank">Map Suite 10.0 Re-Architecture</a></div>
+        <div class="entry-date">2016/02 – 2017/03</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Re-architecture the entire Map Suite product line.</p>
+        <p class="role-text"><span class="label">Role:</span> The old Map Suite products structure is not fashion for now. Everything are crowded in one assembly and same namespace for each platform. It is not easy to target an expected class and 80% classes are not used in the assembly that is referenced by user project. In this case, we planed to redesign the entire assembly structure to make each assembly size tiny, so that user could keep there published application size small. Then refactor the namespace, re-arrange the classes into its corresponding namespaces, so that we could easier target a class by its ability. Once the assemblies are splitted, we design the new redistribution on NuGet to help user to reference our assemblies easier without installation anymore. My responsibility is to refactor almost all .NET map control in Map Suite family that covers WPF, WinForms, WebForm, WebAPI, Mvc, Xamarin for iOS, Android platforms; redesign the assemblies, namespaces; then re-allocate the proper classes into the corresponding namespaces to make related classes tightly integrated. Make the structure levels more obviously. Then reset the unit tests to ensure everything is working as expected. Help to create the NuGet package for each assembly and make them re-pack and upload when necessary.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://itunes.apple.com/us/app/mapshots-agstudio-map/id958494319?mt=8" target="_blank">AgStudio Map for iPad</a></div>
+        <div class="entry-date">2015/06 – 2016/10</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Design and develop the APP with Map Suite iOS Edition.</p>
+        <p class="role-text"><span class="label">Role:</span> Use Xamarin iOS to develop a native iOS App for iPad. It uses the iPad GPS module to locate the accurate location of the device, use it to track the vehicle driven routes to draw an area; with the drawn area, we could calculate the area and split the area with preset grid etc. The app supports offline work, the data can be synchronized when the network restores. Use the RESTful services provided by user to sync the data into users database so that they could continue there jobs on desktop. My responsibility is communicating with customer; draw the psudo UI to confirm the requirements. Then architect the project and design the UI, coding for the structure and help team to complete the functions implementation.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://itunes.apple.com/cn/app/thinkgeo-selectasite/id1048025517?l=en&amp;mt=8" target="_blank">Map Suite Map Controls of Xamarin</a></div>
+        <div class="entry-date">2015/01 – 2015/07</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Architect the map controls of Xamarin.</p>
+        <p class="role-text"><span class="label">Role:</span> This project includes three map controls for mobile mapping development. iOS and Android are used for creating native map apps with Xamarin Framework; Xamarin Forms is another framework that allows to use XAML and uniform APIs to build the mobile mapping applications. All the controls list above shares a same set of PCL project with the low level APIs such as geometry, styling, drawing etc. Above it, the higher level project contains the platform specific features such as iOS graphics etc. My responsibility is to lead team to do the research to verify if my architecture is good to implement. Then finish the development, documents and testing.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://github.com/ThinkGeo/MapSuiteGisEditor" target="_blank">Map Suite GIS Editor</a></div>
+        <div class="entry-date">2011/05 – 2013/05</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Communicate with US office for new requirements and lead the team for the entire development progress.</p>
+        <p class="role-text"><span class="label">Role:</span> This project is the first end point user GIS tool for map data creation, editing and styling; it integrates the default interactive map and navigation behaviors and many useful tools for data analysis. In the development, we used WPF, Ribbon, MEF, Process communication technology to architect an application that are formed with plugins. During the development, I strictly watched my team to follow the IoC rule so that the plugins are not connected too much in the application. Also, we created many custom controls for the UI.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://github.com/ThinkGeo/HowDoISample-ForWpf" target="_blank">Map Suite WPF Edition</a></div>
+        <div class="entry-date">2009/11 – 2010/02</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Design and develop the Map Suite WPF Edition.</p>
+        <p class="role-text"><span class="label">Role:</span> This is a map UI control that allows to integrate an interactive map into existing WPF application. This map control uses WPF framework that contains default mouse events for map navigation (dragging, scrolling up/down to zoom in/out), load popular vector and raster data format and render them in the control, and some animations. Also it uses multi-threading for the vector rendering to keep the UE smooth. Because the lack of resource in company, I am responsible for the entire development.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Work in US for product supports</div>
+        <div class="entry-date">2009/04 – 2009/07</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Work in US for product supports and maintenance.</p>
+        <p class="role-text"><span class="label">Role:</span> Have a chance to work in US for existing products maintenance and customer supports. Also enlarge my view of the world.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Map Suite Silverlight Edition</div>
+        <div class="entry-date">2008/09 – 2009/01</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Design and develop the Map Suite Silverlight Edition.</p>
+        <p class="role-text"><span class="label">Role:</span> This is a map UI control that allows to integrate an interactive map into a rich browser application. This project is one-man project. Including architecture, coding, documentation and sampling.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title"><a href="https://github.com/ThinkGeo/AjaxVehicleTrackingSample-ForWebForms" target="_blank">Map Suite Web Edition</a></div>
+        <div class="entry-date">2008/01 – 2008/10</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Design and develop the Map Suite Web Edition.</p>
+        <p class="role-text"><span class="label">Role:</span> This is the next generation of Map Suite Web Edition with the enhancement of AJAX. Lead 4 guys to go over the entire process of this product development till making it release. This is a custom control for WebForm development. It contains OpenLayers 2.0 JS library and the control responsible for registering the necessary client libraries and resources in user application; users could write C# to create map using the registered JS library; we also have to maintain the map view states after postback. To make user easier to use, I desgined some useful AJAX methods for interacting with server easier.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">GIL Data Front-End Data Importing System</div>
+        <div class="entry-date">2008/01 – 2008/10</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Develop GIL Data Front-End Data Importing System.</p>
+        <p class="role-text"><span class="label">Role:</span> This project is a B/S application for inputting finance data everyday into database, then regroup the data to create beautiful chart and table for the final report.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">PowerCN Wireless Signal Parser</div>
+        <div class="entry-date">2006/01 – 2007/09</div>
+      </div>
+      <div class="entry-body">
+        <p><span class="label">Description:</span> Parse the wireless signal and input to database.</p>
+        <p class="role-text"><span class="label">Role:</span> This project is using Delphi to parse the binary format data of the wireless signal and put the parsed data information into data base for the final report.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Skills ============ -->
+  <section>
+    <h2>Skills</h2>
+
+    <div class="skill">
+      <div class="skill-head">
+        <span class="skill-name">Node.js / JS</span>
+        <span class="pill advanced">Advanced · 2016 – Present</span>
+      </div>
+      <div class="skill-desc">My favorite programming language. Use this language almost every day, for various purpose, like product API development, tools and some POC work.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-head">
+        <span class="skill-name">Frontend — HTML, CSS, React</span>
+        <span class="pill advanced">Advanced · 2004 – Present</span>
+      </div>
+      <div class="skill-desc">Familiar with React, HTML, CSS development. When the current company's project progress is relatively urgent, I sometimes take on front-end on my own.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-head">
+        <span class="skill-name">Python</span>
+        <span class="pill normal">Normal · 2016 – Present</span>
+      </div>
+      <div class="skill-desc">Built algorithm based server and several data analyze utilities.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-head">
+        <span class="skill-name">Go</span>
+        <span class="pill normal">Normal · 2018 – Present</span>
+      </div>
+      <div class="skill-desc">Built k8s-argus (open source, at LogicMonitor) and the Empathia Audio Server in Go.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-head">
+        <span class="skill-name">.NET Framework — WPF, WebForms, WebAPI, C#, .NET Core, ASP.NET Core</span>
+        <span class="pill expert">Expert · 2004 – 2017</span>
+      </div>
+      <div class="skill-desc">12 Years of working experience with .NET. Created hundreds of projects and samples; designed 10+ map controls for desktop, web and mobile. Have the ability to quickly track bugs or issues deep in the project.</div>
+    </div>
+  </section>
+
+  <!-- ============ More ============ -->
+  <section>
+    <h2>More</h2>
+    <p class="more-desc">I have good communication skills. Understand multiple programming languages and own corresponding project development experience. Ability to quickly estimate workload, build product prototypes, dig tech and prod details and control risks. On the Web side, I could play the role of a full-stack engineer. I have about 8 years of team management experience, more than 3 years of technical director, and 9 years of experience in product management. Can take the initiative to find and apply the product direction suitable for the company in the process of continuous learning of new technologies. Familiar with traditional software engineering and agile processes, and take into account the stability of the program while ensuring the progress. I have good English listening, speaking, reading and writing skills.</p>
+
+    <h2 style="margin-top:18px;">Social Contributions</h2>
+    <ol class="contrib">
+      <li><strong>StackOverflow:</strong> Current contribution is 3.5K+, top 11% overall the world. <a href="https://stackoverflow.com/users/703264/howard" target="_blank">stackoverflow.com/users/703264/howard</a></li>
+      <li><strong>Ginkgoch:</strong> OpenSourced a GeoSpatial Map Server SDK built on Node.js. Supports geo-spatial calculation, multiple data source, map styling and rendering features. Also includes complete demo code and documents. <a href="https://ginkgoch.com/" target="_blank">ginkgoch.com</a></li>
+      <li><strong>Godash:</strong> OpenSourced a Golang version lodash SDK. Recently upgraded it to v2 for generic support. <a href="https://github.com/ginkgoch/godash" target="_blank">github.com/ginkgoch/godash</a></li>
+      <li><strong>Location to Phone Number:</strong> An interesting project. It was a training project but got 170 stars. It indicates the user case is much more important than the code itself. <a href="https://github.com/howardchn/location-to-phone-number" target="_blank">github.com/howardchn/location-to-phone-number</a></li>
+    </ol>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-list">
+      <div><strong>Email:</strong> <a class="link" href="mailto:howardch@outlook.com">howardch@outlook.com</a></div>
+      <div><strong>Cell Phone:</strong> +86-13540742190</div>
+      <div><strong>WeChat:</strong> Godspeedch</div>
+      <div><strong>Blog:</strong> <a class="link" href="https://howardchn.github.io" target="_blank">https://howardchn.github.io</a></div>
+    </div>
+  </section>
+
+</div>
+
+<button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+
+</body>
+</html>
