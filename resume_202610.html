@@ -197,6 +197,22 @@
   }
   .print-btn:hover { background: #173d5f; }
 
+  /* ---------- Mobile ---------- */
+  @media (max-width: 720px) {
+    body { font-size: 13px; }
+    .paper {
+      max-width: none;
+      margin: 0;
+      padding: 24px 18px 32px;
+      box-shadow: none;
+    }
+    h1 { font-size: 25px; }
+    .headline { font-size: 13.5px; }
+    .entry-head, .skill-head { gap: 10px; }
+    .contact-bar span.sep { margin: 0 5px; }
+    .print-btn { right: 14px; bottom: 14px; padding: 9px 16px; }
+  }
+
   /* ---------- Print ---------- */
   @page { size: A4; margin: 14mm 15mm; }
 
@@ -228,7 +244,6 @@
       <a href="mailto:howardch@outlook.com">howardch@outlook.com</a><span class="sep">·</span>
       +86-13540742190<span class="sep">·</span>
       WeChat: Godspeedch<span class="sep">·</span>
-      <a href="https://howardchn.github.io" target="_blank">howardchn.github.io</a><span class="sep">·</span>
       Chengdu, China
     </div>
     <div class="basic-info">Male<span class="sep">|</span>Bachelor's Degree<span class="sep">|</span>23 years of working experience</div>
@@ -743,7 +758,6 @@
       <div><strong>Email:</strong> <a class="link" href="mailto:howardch@outlook.com">howardch@outlook.com</a></div>
       <div><strong>Cell Phone:</strong> +86-13540742190</div>
       <div><strong>WeChat:</strong> Godspeedch</div>
-      <div><strong>Blog:</strong> <a class="link" href="https://howardchn.github.io" target="_blank">https://howardchn.github.io</a></div>
     </div>
   </section>
 
